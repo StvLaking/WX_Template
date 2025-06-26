@@ -1,0 +1,23 @@
+<div style="display: flex; align-items: center;">
+        <!-- 左边内容 -->
+        <div style="width: 320px; margin-top: 50px; ">
+            <bar-code content="{{trackingno}}" width="300" height="100" config='{"displayValue": true, "textAlign": "left"}'></bar-code>
+          
+            <bar-code content="{{orderkey}}" width="300" height="100" config='{"displayValue": true, "textAlign": "left"}'></bar-code>
+         
+        
+        </div>
+
+        <!-- 右边内容（垂直居中）  -->
+        <div style="
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    ">
+            <div>数量:{{qty}}</div>
+        </div>
+       
+    </div>
