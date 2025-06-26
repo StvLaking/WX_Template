@@ -1,0 +1,21 @@
+<div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <style>
+    .title {
+      font-weight: 700;
+      /* 长度单位px, 数值等于 mm * 10， 如面单上10mm，为100px */
+      height: 50px; 
+    }
+  </style>
+  <div class="title">
+  店铺名称 {{ shopName }}!
+  </div>
+  {{#productInfo}}
+  <div>{{name}},{{count}},{{code}}, {{{description}}}</div>
+  {{/productInfo}}
+  <img src="{{imgSrc}}" width="300" height="50"/>
+  <bar-code content="{{productBarcode}}" width="300" height="60" config='{"displayValue": true, "textAlign": "left"}' ></bar-code>
+  <qr-code content="{{productQRcode}}" width="120" height="120" ></qr-code>
+</div>
